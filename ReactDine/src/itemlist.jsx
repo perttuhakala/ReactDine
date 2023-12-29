@@ -1,11 +1,11 @@
-import item1 from "./assets/items/orange.jpg";
-import item2 from "./assets/items/banana.jpg";
-import item3 from "./assets/items/mincedmeat.jpg";
-import item4 from "./assets/items/milk.jpg";
-import item5 from "./assets/items/eggs.jpg";
-import item6 from "./assets/items/cream.jpg";
-import item7 from "./assets/items/butter.jpg";
-import item8 from "./assets/items/sugar.jpg";
+import item1 from "./assets/orange.jpg";
+import item2 from "./assets/banana.jpg";
+import item3 from "./assets/mincedmeat.jpg";
+import item4 from "./assets/milk.jpg";
+import item5 from "./assets/eggs.jpg";
+import item6 from "./assets/cream.jpg";
+import item7 from "./assets/butter.jpg";
+import item8 from "./assets/sugar.jpg";
 
 export const ITEMS = [
   {
