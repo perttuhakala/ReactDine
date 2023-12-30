@@ -1,7 +1,11 @@
 import PropTypes from 'prop-types';
+import { MenuContext } from "./menu-context.jsx";
+import { useContext } from 'react';
 
 export const Item = (props) => {
-     const {  itemName, price, itemImage } = props.data;
+     const {  id, itemName, price, itemImage } = props.data;
+      const { addToCart } = useContext(MenuContext);
+
     return (
         <div className="item">
         <img src={itemImage} />
@@ -11,7 +15,9 @@ export const Item = (props) => {
             </p>
             <p>€{price}</p>
         </div>
-        <button className="addToCartButton">Add To Cart</button>
+        <button className="addToCartButton" onClick={() => addToCart (id)}>
+        Add To Cart
+        </button>
         </div>
     );
 };
