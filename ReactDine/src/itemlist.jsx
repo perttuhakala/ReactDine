@@ -1,59 +1,67 @@
-import item1 from "./assets/orange.jpg";
-import item2 from "./assets/banana.jpg";
-import item3 from "./assets/mincedmeat.jpg";
-import item4 from "./assets/milk.jpg";
-import item5 from "./assets/eggs.jpg";
-import item6 from "./assets/cream.jpg";
-import item7 from "./assets/butter.jpg";
-import item8 from "./assets/sugar.jpg";
+import item1 from "./assets/mballs.jpg";
+import item2 from "./assets/pasta.jpg";
+import item3 from "./assets/salmon.jpg";
+import item4 from "./assets/salad.jpg";
+import item5 from "./assets/steak.jpg";
+import item6 from "./assets/onionsoup.jpg";
+import item7 from "./assets/hamburger.jpg"
+import item8 from "./assets/pizza.jpg"
 
 export const ITEMS = [
   {
     id: 1,
-    itemName: "Orange",
-    price: 0.40,
+    itemName: "Mashed potatoes and meatballs",
+    description: "Try our delicious handmade meatballs",
+    price: 14.90,
     itemImage: item1,
   },
   {
     id: 2,
-    itemName: "Banana",
-    price: 0.20,
+    itemName: "Pasta carbonara",
+    description: "Try our creamy pasta carbonara",
+    price: 15.90,
     itemImage: item2,
   },
   {
     id: 3,
-    itemName: "Mincedmeat",
-    price: 5.50,
+    itemName: "Salmon",
+    description: "Try our fresh salmon",
+    price: 20.90,
     itemImage: item3,
   },
   {
     id: 4,
-    itemName: "Milk",
-    price: 1.00,
+    itemName: "Caesars salad",
+    description: "Try our fresh salads",
+    price: 12.90,
     itemImage: item4,
   },
   {
     id: 5,
-    itemName: "Eggs",
-    price: 2.50,
+    itemName: "Steak",
+    description: "Try our tasty steak",
+    price: 16.90,
     itemImage: item5,
   },
   {
     id: 6,
-    itemName: "Cream",
-    price: 1.50,
+    itemName: "Onion soup",
+    description: "Try our loved onion soup",
+    price: 10.90,
     itemImage: item6,
   },
   {
     id: 7,
-    itemName: "Butter",
-    price: 2.00,
+    itemName: "Hamburger with fries",
+    description: "Try our juicy hamburgers with crispy fries",
+    price: 19.90,
     itemImage: item7,
   },
   {
     id: 8,
-    itemName: "Sugar",
-    price: 2.70,
+    itemName: "Pizza",
+    description: "Try our handmade pizzas with toppings of your choice",
+    price: 21.90,
     itemImage: item8,
   }
 ];

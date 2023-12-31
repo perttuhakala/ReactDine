@@ -4,7 +4,7 @@ import { MenuContext } from "./menu-context.jsx";
 import "./pages/menu.css";
 
 export const Item = (props) => {
-  const { id, itemName, price, itemImage } = props.data;
+  const { id, itemName, description, price, itemImage } = props.data;
   const { addToCart, cart } = useContext(MenuContext);
 
   const quantityInCart = cart.find((item) => item.id === id)?.quantity || 0;
@@ -20,7 +20,10 @@ export const Item = (props) => {
         <p>
           <b>{itemName}</b>
         </p>
-        <p>€{price}</p>
+        <p>
+          <b>{description}</b>
+        </p>
+        <p className="price">€{price.toFixed(2)}</p>
       </div>
       <div className="quantity-controls">
         <button onClick={handleAddToCart}>Add To Cart</button>
@@ -34,6 +37,7 @@ Item.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.number.isRequired,
     itemName: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     itemImage: PropTypes.string.isRequired,
   }).isRequired,
