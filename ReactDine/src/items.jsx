@@ -1,27 +1,35 @@
-import PropTypes from 'prop-types';
+import { useContext } from "react";
+import PropTypes from "prop-types";
 import { MenuContext } from "./menu-context.jsx";
-import { useContext } from 'react';
+import "./pages/menu.css";
 
 export const Item = (props) => {
-     const {  id, itemName, price, itemImage } = props.data;
-      const { addToCart } = useContext(MenuContext);
+  const { id, itemName, price, itemImage } = props.data;
+  const { addToCart, cart } = useContext(MenuContext);
 
-    return (
-        <div className="item">
-        <img src={itemImage} />
-        <div className="description">
-            <p>
-            <b>{itemName}</b>
-            </p>
-            <p>€{price}</p>
-        </div>
-        <button className="addToCartButton" onClick={() => addToCart (id)}>
-        Add To Cart
-        </button>
-        </div>
-    );
+  const quantityInCart = cart.find((item) => item.id === id)?.quantity || 0;
+
+  const handleAddToCart = () => {
+    addToCart(id);
+  };
+
+  return (
+    <div className="item">
+      <img src={itemImage} alt={itemName} />
+      <div className="description">
+        <p>
+          <b>{itemName}</b>
+        </p>
+        <p>€{price}</p>
+      </div>
+      <div className="quantity-controls">
+        <button onClick={handleAddToCart}>Add To Cart</button>
+        <span className="added-quantity">{quantityInCart}</span>
+      </div>
+    </div>
+  );
 };
-        
+
 Item.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.number.isRequired,
@@ -30,4 +38,3 @@ Item.propTypes = {
     itemImage: PropTypes.string.isRequired,
   }).isRequired,
 };
-export default Item;
