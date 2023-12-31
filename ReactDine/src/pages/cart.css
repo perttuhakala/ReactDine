@@ -71,7 +71,7 @@
 }
 
 .checkout-button {
-    background-color: #2ecc71;
+    background-color: #3498db;
     color: white;
     padding: 12px;
     font-size: 16px;
@@ -79,8 +79,9 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
+    text-decoration: none; /* Remove underline */
 }
 
 .checkout-button:hover {
-    background-color: #27ae60;
+    background-color: #000000;
 }

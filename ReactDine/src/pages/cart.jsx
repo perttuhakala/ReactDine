@@ -14,9 +14,9 @@ export const Cart = () => {
     return (
         <div className="cart">
             <div className="cart-header">
-                <div className="header-item">Item</div>
-                <div className="header-quantity">Quantity</div>
-                <div className="header-price">Price</div>
+                <div className="header-item"> | Item name</div>
+                <div className="header-quantity">| Quantity</div>
+                <div className="header-price">| Price |</div>
                 <div className="header-action"></div>
             </div>
             {cart.map((item) => (
