@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "itemName": "Mashed potatoes and meatballs",
+      "description": "Try our delicious handmade meatballs",
+      "price": 14.90,
+      "itemImage": "src/assets/mballs.jpg"
+    },
+    {
+      "id": 2,
+      "itemName": "Pasta carbonara",
+      "description": "Try our creamy pasta carbonara",
+      "price": 15.90,
+      "itemImage": "src/assets/pasta.jpg"
+    },
+    {
+      "id": 3,
+      "itemName": "Salmon",
+      "description": "Try our fresh salmon",
+      "price": 20.90,
+      "itemImage": "src/assets/salmon.jpg"
+    },
+    {
+      "id": 4,
+      "itemName": "Caesars salad",
+      "description": "Try our fresh salads",
+      "price": 12.90,
+      "itemImage": "src/assets/salad.jpg"
+    },
+    {
+      "id": 5,
+      "itemName": "Steak",
+      "description": "Try our tasty steak",
+      "price": 16.90,
+      "itemImage": "src/assets/steak.jpg"
+    },
+    {
+      "id": 6,
+      "itemName": "Onion soup",
+      "description": "Try our loved onion soup",
+      "price": 10.90,
+      "itemImage": "src/assets/onionsoup.jpg"
+    },
+    {
+      "id": 7,
+      "itemName": "Hamburger with fries",
+      "description": "Try our juicy hamburgers with crispy fries",
+      "price": 19.90,
+      "itemImage": "src/assets/hamburger.jpg"
+    },
+    {
+      "id": 8,
+      "itemName": "Pizza",
+      "description": "Try our handmade pizzas with toppings of your choice",
+      "price": 21.90,
+      "itemImage": "src/assets/pizza.jpg"
+    }
+  ]
